@@ -1,0 +1,64 @@
+body{
+    background: lightgray;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+input{
+    border-radius: 60px;
+    background:black;
+    color: white;
+    font-size: large;
+    text-align: center;
+}
+
+input:hover{
+    background-color:white;
+    color: black;
+}
+
+Label{
+    color: black;
+    font-size: large;  
+}
+
+input[type="button"]:hover {
+    background-color: limegreen;
+  }
+
+  .spinner,.spinner:after{
+    width: 64px;
+    height: 64px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: 90px;
+    margin-left: -32px;
+    border-radius: 50%;
+    z-index: 2
+ }
+.spinner {
+    background-color: transparent;
+    border-top: 10px solid rgb(45, 48, 51);
+    border-right: 10px solid rgb(45, 48, 51);
+    border-bottom: 10px solid rgb(45, 48, 51);
+    border-left: 10px solid rgba(45, 48, 51, 0.2);
+    transform: translateZ(0);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: .8s;
+    animation-name: spinner-loading
+ }
+@keyframes spinner-loading{
+  0% {
+      transform: rotate(0deg)
+  } to {
+      transform: rotate(1turn)
+  }
+}
